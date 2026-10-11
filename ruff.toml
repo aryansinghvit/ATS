@@ -1,0 +1,14 @@
+line-length = 100
+target-version = "py311"
+src = ["backend", "."]
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[lint.isort]
+known-first-party = ["app", "tests"]
+known-third-party = ["alembic"]
+
+[lint.per-file-ignores]
+# Inline SQL and long assertion messages in tests read better unwrapped.
+"tests/**" = ["E501"]
