@@ -1,0 +1,20 @@
+# Keep LF line endings on every OS (the project moved from macOS to Windows).
+* text=auto eol=lf
+
+# Windows-only scripts need CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.webm binary
+*.wav binary
+*.mp3 binary
